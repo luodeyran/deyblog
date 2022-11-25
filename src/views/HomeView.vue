@@ -1,49 +1,62 @@
 <template>
   <div class="home">
     <el-container>
-      <el-aside width="200px">Aside</el-aside>
+      <el-aside width="350px">Aside</el-aside>
       <el-container>
         <el-header>Header</el-header>
         <el-main>Main</el-main>
-        <el-footer>Footer</el-footer>
+        <!-- <el-footer>Footer</el-footer> -->
       </el-container>
     </el-container>
   </div>
 </template>
 
+<<script>
+export default {
+  name: 'DeyblogHomeView',
+
+  data() {
+    return {
+      
+    };
+  },
+
+  mounted() {
+    
+  },
+
+  methods: {
+    
+  },
+};
+</script>
+
 <style >
-.el-header,
-.el-footer {
+.el-header {
   background-color: #b3c0d1;
   color: #333;
   text-align: center;
-  line-height: 60px;
+  min-height: 7pc;
 }
 
 .el-aside {
   background-color: #d3dce6;
   color: #333;
   text-align: center;
-  line-height: 200px;
+  height: 98.7vh;
 }
 
 .el-main {
   background-color: #e9eef3;
   color: #333;
   text-align: center;
-  line-height: 160px;
 }
 
-body > .el-container {
-  margin-bottom: 40px;
+.el-footer {
+  background-color: #b3c0d1;
+  color: #333;
+  text-align: center;
+  min-height: 8pc;
 }
 
-.el-container:nth-child(5) .el-aside,
-.el-container:nth-child(6) .el-aside {
-  line-height: 260px;
-}
-
-.el-container:nth-child(7) .el-aside {
-  line-height: 320px;
-}
 </style>
